@@ -40,7 +40,7 @@ const Page = async ({ searchParams }: SearchParamsProps) => {
       <section className="mt-12 flex flex-wrap gap-4">
         {result.tags.length > 0 ? (
           result.tags.map(
-            (tag) =>
+            (tag: any) =>
               tag.questions.length > 0 ? (
                 <Link
                   href={`/tags/${tag._id}`}
